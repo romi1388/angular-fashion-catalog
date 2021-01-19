@@ -1,0 +1,63 @@
+div.login-form-wrapper {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-size: 100%;
+  overflow-y: auto;
+}
+ div.version-box {
+   position: fixed;
+   margin: 0;
+   padding: 0;
+   height: 29px;
+   width: 100vw;
+   background-color: #F0B323;
+   left: 0;
+   right: 0;
+   bottom: 0;
+ }
+
+ img.version-logo {
+    margin-left: 5px;
+    margin-top: 4px;
+  }
+
+ span.version-number {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: bolder;
+  }
+
+ span.version-label {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+
+
+div.login-form, div.registration-form {
+  border-radius: 4px;
+}
+ div.card-block {
+   padding: 20px 20px 20px 20px;
+ }
+ h4.title {
+    display: inline-block;
+    color: #47463f;
+    margin-bottom: 20px;
+  }
+
+
+div.registration-form, div.login-form {
+  position: absolute;
+  background-color: #F2F2F2;
+  z-index: 200;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: 10%;
+  width: 340px;
+}

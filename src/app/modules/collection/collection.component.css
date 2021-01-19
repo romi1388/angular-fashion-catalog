@@ -1,0 +1,29 @@
+.scroll-box-wrapper {
+  height: 68vh;
+}
+.card-grid {
+  min-width: 515px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 47px auto 32px;
+  box-shadow: 0 0 23px 0 rgba(153, 153, 153, 0.2);
+  background-color: #ffffff;
+}
+
+.card-content-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.search {
+  display: flex;
+  margin: 41px;
+  font-weight: 500;
+}
+.card-content-info {
+  display: grid;
+}
+.detail {
+  float: right;
+  margin-right: 18px;
+  margin-bottom: 14px;
+}

@@ -1,0 +1,46 @@
+<div *ngIf="loading" class="loader-container">
+<div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+<div>
+  <app-card-view [objects]="collection" >
+    <div class="table search">
+      <app-search-bar (searchValue)="filter($event)"></app-search-bar>
+    </div>
+    <div class="col mb-5" *ngFor="let item of searchedCollection">
+      <div class="card-grid ml-4">
+        <div class="card-item-header">
+          <h5 class="">{{item.itemType}}</h5>
+        </div>
+        <div class="card-content-grid">
+          <div class="text-center image">
+            <img [src]="item.image"
+                 [title]="item.name"
+                 [style.width.px]="150"
+                 [style.height.px]="210">
+          </div>
+          <div class="text-center">
+            <form class="card-content-info">
+              <mat-form-field>
+                <input matInput placeholder="Item Name" value="{{ item.name }}">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Item Info" value=" {{ item.itemInfo }}">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Price" value="{{ item.price |currency }}">
+              </mat-form-field>
+            </form>
+          </div>
+          </div>
+          <div class="footer card-footer-grid">
+            <a class="text-dark" [routerLink]="['/collection', item.id]">
+            <mat-icon class="p-1 cursor detail">arrow_drop_down_circle</mat-icon> </a>
+            <i class="material-icons ml-2 mt-1 cursor" (click)="deleteItem(item)" >delete</i>
+            <p class="text-right p-1">Show all options</p>
+          </div>
+      </div>
+    </div>
+  </app-card-view>
+</div>

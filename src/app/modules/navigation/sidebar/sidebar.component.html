@@ -1,0 +1,19 @@
+
+<app-header></app-header>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" class="navbar-container " opened role="navigation">
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+        <div class="menu-item">
+          <a routerLink='collection' routerLinkActive="icon-active" [routerLinkActiveOptions]="{exact: true}">
+            <mat-icon aria-hidden="false" class="navigation-icon" aria-label="Example home icon">collections</mat-icon></a>
+          <a routerLinkActive="Active" [routerLinkActiveOptions]="{exact: true}" routerLink='collection'>Collection</a>
+       </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

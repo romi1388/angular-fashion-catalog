@@ -1,0 +1,39 @@
+mat-toolbar {
+  border-radius: 3px;
+  background-color: darkslategrey;
+  height: 79px;
+}
+.right-items-container {
+  right: 0;
+  width: 100%;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: middle;
+  margin-top: 28px !important;
+}
+.dropdown-menu-button {
+  color: white;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 10px;
+  height: auto;
+}
+.header-user-name {
+  color: white;
+  text-align: center;
+  float: right;
+}
+.header-logout-link {
+  color: #FFF;
+  text-align: center;
+  float: right;
+  clear: right;
+  margin-top: -15px;
+  cursor: pointer;
+}
+button:focus {
+  outline: 0 !important;
+}

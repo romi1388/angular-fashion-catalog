@@ -1,0 +1,25 @@
+.popup-wrapper {
+  width: 80vh;
+  height: auto;
+  background-color: white;
+  border: solid 2px #0077cf;
+  border-radius: 8px;
+  /* box-shadow: 0 30px 80px 0 rgba(0, 0, 0, 0.3); */
+}
+
+.close {
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.message-wrapper {
+  margin: 50px;
+}
+
+p {
+  font-size: 17px;
+}
+
+.button-wrapper {
+  margin-bottom: 50px;
+}

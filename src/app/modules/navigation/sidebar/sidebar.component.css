@@ -1,0 +1,30 @@
+.navbar-container {
+  padding-top: 40px;
+  width: 275px;
+  position: fixed;
+  top: 80px;
+}
+.header-content-format {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333333;
+}
+.content-container {
+//padding: 50px;
+  transform: scale(.9) !important;
+  height: 100vh !important;
+  background-color: white;
+}
+
+
+
+
+

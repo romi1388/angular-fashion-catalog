@@ -1,0 +1,14 @@
+<div class="popup-wrapper">
+  <button mat-dialog-close type="button" class="close"  aria-label="Close">
+    <mat-icon aria-hidden="false" aria-label="close icon">close</mat-icon>
+  </button>
+  <div class="message-wrapper text-center">
+    <p>
+      <b>{{data.message}}</b>
+    </p>
+  </div>
+  <div class="col text-center button-wrapper">
+    <button (click)="onNoClick()" class="button-secondary">No</button>
+    <button tabindex="-1" [mat-dialog-close]="true" class="button-primary">Yes</button>
+  </div>
+</div>
