@@ -20,7 +20,6 @@ export class CollectionUpdateComponent implements OnInit {
 
   ngOnInit(): void {
      this.activatedRoute.paramMap.subscribe( params => {
-         console.log(params);
        const id = +params.get('id');
        this.getCollectionItem(id);
        })
@@ -28,7 +27,6 @@ export class CollectionUpdateComponent implements OnInit {
   }
 
   getCollectionItem(id:number) : void {
-    console.log("hello");
     this.collectionService.getCollectionItem(id).subscribe({
       next: item => this.retriveItem(item),
       error: err => this.errMsg = err
@@ -37,15 +35,12 @@ export class CollectionUpdateComponent implements OnInit {
 
   retriveItem(item: Collection): void {
     this.item = item;
-    console.log("hello2");
     if(!this.item) {
       this.title = 'no item';
-      console.log("hello3");
     } else if(this.item.id === 0) {
       this.title = 'Add new Item';
     } else {
       this.title = `Edit Item: ${this.item.itemType}`;
-      console.log("hello4");
       this.loading = false;
     }
   }

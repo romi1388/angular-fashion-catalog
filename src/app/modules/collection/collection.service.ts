@@ -13,7 +13,6 @@ private itemUrl = 'api/collection';
   getCollection(): Observable<Collection[]> {
     return this.http.get<Collection[]>(this.itemUrl)
       .pipe(
-        tap(data => console.log('collection: ', JSON.stringify(data))),
         catchError(this.handleError)
       );
   }
@@ -25,7 +24,6 @@ private itemUrl = 'api/collection';
     const url = `${this.itemUrl}/${id}`;
     return this.http.get<Collection>(url)
       .pipe(
-        tap(data => console.log('collection: ', JSON.stringify(data))),
         catchError(this.handleError),
       );
   }
